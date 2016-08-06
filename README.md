@@ -28,5 +28,17 @@ in the future there will be a feature to disable git status.
 
 ## screenshot
 
+enable the theme with one single command
+![](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizePath/enableTheme.png)
+---
 
-![test](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizePath.png)
+customize the displayed path
+![](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizePath.png)
+---
+
+change the path back to default: just setting it to anything that can be cast to `$false`
+![](https://github.com/chantisnake/power-theme/raw/master/screenshots/pathToDefault.png)
+---
+
+customize the displayed date time, with the same rule as `Format` parameter in `Get-Date` function
+![](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizeTime.png)
