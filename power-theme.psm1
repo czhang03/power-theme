@@ -6,7 +6,7 @@ $global:THEME = @{
 function Enable-Theme {
     param(
         [Parameter(Mandatory=$true, Position=0)]
-        [ValidateSet("pure", "robbyrussell", "amuse", IgnoreCase=$true)]
+        [ValidateSet("pure", "robbyrussell", "amuse", "ys", IgnoreCase=$true)]
         [string] $ThemeName
     )
     $ThemeName = $ThemeName.ToLower(); # all the theme filename will be lower case
@@ -32,7 +32,7 @@ function New-Theme  {
     }
 
     # create theme from template
-    Copy-Item -Path .\themeTemplate.ps1 -Destination $ThemeFileFullName
+    Copy-Item -Path "$PSScriptRoot\themeTemplate.ps1" -Destination $ThemeFileFullName
 
     # log message
     Write-Host 'theme file successfully created in:' -ForegroundColor Green
