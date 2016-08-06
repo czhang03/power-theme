@@ -1,7 +1,7 @@
-$THEME = @(
-    $DateTimeFormat = $null
-    $PathFormat = $null
-)
+$global:THEME = @{
+    'DateTimeFormat' = ''
+    'PathFormat' = ''
+}
 
 function Enable-Theme {
     param(
@@ -64,19 +64,27 @@ function Get-ThemePath {
     param (
         [Parameter(Mandatory = $false)]
         [ValidateSet('concise', 'full', 'folder')]
-        [string] $PathFormat
+        [string] $Format = 'folder'
     )
     
+    if ($THEME.PathFormat) {  # user setting exist
+        $pathStr = Get-ThemePathHelper -Format $THEME.PathFormat  # use the user setting
+        return $pathStr
+    }
+    elseif ($Format) {
+        $pathStr = Get-ThemePathHelper -Format $Format  # use the developer setting
+        return $pathStr
+    }
 
 }
 
-function Get-ThemePathHelper ($PathFormat) {
+function Get-ThemePathHelper ($Format) {
 
     # concise path is a fish-like path format
     # it only display the first letter in each forlder, besides the current forlder
     # C:\path\to\current\folder will be displayed as C:\p\t\c\folder
 
-    if ($PathFormat -eq 'concise') {
+    if ($Format -eq 'concise') {
         # split the path into a list
         $PathList = $PWD -split '\\'
         $concisePathList = @($PathList[0])  # put the Drive Letter into the pathList
@@ -92,13 +100,13 @@ function Get-ThemePathHelper ($PathFormat) {
     }
 
     # only display the current folder
-    elseif ($PathFormat -eq 'folder') {
+    elseif ($Format -eq 'folder') {
         $folderName = Split-Path $PWD -leaf
         return $folderName
     }
 
     # display the full path
-    elseif ($PathFormat -eq 'full') {
+    elseif ($Format -eq 'full') {
         return $PWD
     }
 
