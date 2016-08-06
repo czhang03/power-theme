@@ -18,7 +18,7 @@ In the future, [chocolatey](https://chocolatey.org/), [psGet](http://psget.net/)
 [posh-git](https://github.com/dahlbyk/posh-git) is required for git status, 
 in the future there will be a feature to disable git status.
 
-[conemu](http://conemu.github.io/) and [PSReadLine](http://conemu.github.io/) is recommended for a even more gorgeous powershell
+[conemu](http://conemu.github.io/) and [PSReadLine](http://conemu.github.io/) is recommended for an even more gorgeous powershell
 
 ## feature
 
