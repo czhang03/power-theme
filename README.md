@@ -28,3 +28,5 @@ in the future there will be a feature to disable git status.
 
 ## screenshot
 
+
+![test](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizePath.png)
