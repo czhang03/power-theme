@@ -11,7 +11,7 @@ function Enable-Theme {
     )
     $ThemeName = $ThemeName.ToLower(); # all the theme filename will be lower case
 
-    $ThemeString = (Get-Content "$PSScriptRoot\$ThemeName.ps1" -Encoding UTF8) -join "`r`n"
+    $ThemeString = (Get-Content "$PSScriptRoot\themes\$ThemeName.ps1" -Encoding UTF8) -join "`r`n"
 
     Invoke-Expression $ThemeString  # load the theme
 }
@@ -23,7 +23,7 @@ function New-Theme  {
     )
 
     $ThemeName = $ThemeName.ToLower();  # all the theme filename will be lower case
-    $ThemeFileFullName = Join-Path -Path $PSScriptRoot -ChildPath "$ThemeName.ps1"  # get the full path of the theme file
+    $ThemeFileFullName = Join-Path -Path $PSScriptRoot -ChildPath "themes\$ThemeName.ps1"  # get the full path of the theme file
 
     # validate theme name
     if (Test-Path $ThemeFileFullName) {
