@@ -28,21 +28,21 @@ in the future there will be a feature to disable git status.
 
 ## screenshot
 
-enable the theme with one single command
+### enable the theme with one single command
 ![](https://github.com/chantisnake/power-theme/raw/master/screenshots/enableTheme.png)
 ---
 
-customize the displayed path
+### customize the displayed path
 ![](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizePath.png)
 ---
 
-change the path back to default: just setting it to anything that can be cast to `$false`
+### change the path back to default: just setting it to anything that can be cast to `$false`
 ![](https://github.com/chantisnake/power-theme/raw/master/screenshots/pathToDefault.png)
 ---
 
-customize the displayed date time, with the same rule as `Format` parameter in `Get-Date` function
+### customize the displayed date time, with the same rule as `Format` parameter in `Get-Date` function
 ![](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizeTime.png)
 ---
 
-git is fully supported with the power of posh-git
+### git is fully supported with the power of posh-git
 ![](https://github.com/chantisnake/power-theme/raw/master/screenshots/gitSupport.png)
