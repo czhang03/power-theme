@@ -87,15 +87,17 @@ function Get-ThemePathHelper ($Format) {
     if ($Format -eq 'concise') {
         # split the path into a list
         $PathList = $PWD -split '\\'
-        $concisePathList = @($PathList[0])  # put the Drive Letter into the pathList
 
         # only take the first letter in each folder name, except the Drive Letter and current folder
+        $concisePathList = @($PathList[0])  # put the Drive Letter into the pathList
         foreach ($Path in $PathList[1..$($PathList.Length-2)]) {
-            $concisePathList.Add($Path[0])
+            $concisePathList += $Path[0]
         }
-
+        $concisePathList += $PathList[-1]
+        
         # reconstruct the path string
-        $concisePath = $consicePathList -join '\'
+        $concisePath = $concisePathList -join '\'
+
         return $concisePath
     }
 
