@@ -42,3 +42,7 @@ change the path back to default: just setting it to anything that can be cast to
 
 customize the displayed date time, with the same rule as `Format` parameter in `Get-Date` function
 ![](https://github.com/chantisnake/power-theme/raw/master/screenshots/customizeTime.png)
+---
+
+git is fully supported with the power of posh-git
+![](https://github.com/chantisnake/power-theme/raw/master/screenshots/gitSupport.png)
