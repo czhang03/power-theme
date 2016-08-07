@@ -8,7 +8,7 @@ a easy to use powershell theme manager
 this project is currently in BETA. You need to manually clone to your local module folder.
 
 ```
-git clone https://github.com/chantisnake/power-theme $($env:PSModulePath -split ';')[0]
+git clone https://github.com/chantisnake/power-theme "$($($env:PSModulePath -split ';')[0])\power-theme"
 ```
 
 In the future, [chocolatey](https://chocolatey.org/), [psGet](http://psget.net/), and install script will be supported
