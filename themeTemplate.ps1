@@ -4,7 +4,7 @@
 # below is the default setting for git prompt, you can make you own
 # see: https://github.com/dahlbyk/posh-git/blob/master/GitPrompt.ps1
 
-$global:GitPromptSettings.DefaultForegroundColor                       = $Host.UI.RawUI.ForegroundColor
+$global:GitPromptSettings.DefaultForegroundColor                      = $Host.UI.RawUI.ForegroundColor
 
 $global:GitPromptSettings.BeforeText                                  = ' ['
 $global:GitPromptSettings.BeforeForegroundColor                       = [ConsoleColor]::Yellow
