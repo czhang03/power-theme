@@ -6,7 +6,6 @@ $global:THEME = @{
 function Enable-Theme {
     param(
         [Parameter(Mandatory=$true, Position=0)]
-        [ValidateSet("pure", "robbyrussell", "amuse", "ys", IgnoreCase=$true)]
         [string] $ThemeName
     )
     $ThemeName = $ThemeName.ToLower(); # all the theme filename will be lower case
