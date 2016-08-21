@@ -19,10 +19,10 @@ function global:prompt {
     # second line
     Write-Host ' ' -NoNewLine
     if ($RealExitCode -ne 0) {
-        Write-Host '>' -NoNewline -ForegroundColor Red
+        Write-Host '〉' -NoNewline -ForegroundColor Red
     }
     else {
-        Write-Host '>' -NoNewline -ForegroundColor Magenta
+        Write-Host '〉' -NoNewline -ForegroundColor Magenta
     }
     
     # do not remove this line
