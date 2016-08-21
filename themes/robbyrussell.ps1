@@ -6,7 +6,7 @@
 
 # $global:GitPromptSettings.DefaultForegroundColor                      = $Host.UI.RawUI.ForegroundColor
 
-$global:GitPromptSettings.BeforeText                                  = ' git ('
+$global:GitPromptSettings.BeforeText                                  = ' git( '
 $global:GitPromptSettings.BeforeForegroundColor                       = [ConsoleColor]::DarkBlue
 # $global:GitPromptSettings.BeforeBackgroundColor                       = $Host.UI.RawUI.BackgroundColor
 
@@ -14,7 +14,7 @@ $global:GitPromptSettings.BeforeForegroundColor                       = [Console
 # $global:GitPromptSettings.DelimForegroundColor                        = [ConsoleColor]::Yellow
 # $global:GitPromptSettings.DelimBackgroundColor                        = $Host.UI.RawUI.BackgroundColor
 
-$global:GitPromptSettings.AfterText                                   = ')'
+$global:GitPromptSettings.AfterText                                   = ' )'
 $global:GitPromptSettings.AfterForegroundColor                        = [ConsoleColor]::DarkBlue
 # $global:GitPromptSettings.AfterBackgroundColor                        = $Host.UI.RawUI.BackgroundColor
 
